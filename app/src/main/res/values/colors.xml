@@ -17,4 +17,8 @@
     <color name="selected_item_background_color">#34FD3A69</color>
     <color name="selected_item_text_color">#FD3A69</color>
     <color name="unselected_item_text_color">#C3C4C9</color>
+    <color name="border_line_color">#F3F5F9</color>
+    <color name="title_color">#222831</color>
+    <color name="description_color">#AAAAAD</color>
+    <color name="price_color">#FD3A69</color>
 </resources>

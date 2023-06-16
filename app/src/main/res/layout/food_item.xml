@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/food_item_height"
+    android:background="@drawable/food_item_borders">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/food_padding">
+
+        <ImageView
+            android:id="@+id/foodImage"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:src="@drawable/some_food"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/food_name_margin_start"
+            android:text="@string/temp_food_name"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/title_color"
+            app:layout_constraintStart_toEndOf="@id/foodImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/foodDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/description_margin_top"
+            android:layout_marginStart="@dimen/food_description_margin_start"
+            android:text="@string/temp_food_description"
+            android:textSize="@dimen/description_test_size"
+            android:textColor="@color/description_color"
+            app:layout_constraintStart_toEndOf="@id/foodImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foodName" />
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:paddingTop="@dimen/price_vertical_padding"
+            android:paddingBottom="@dimen/price_vertical_padding"
+            android:paddingStart="@dimen/price_horizontal_padding"
+            android:paddingEnd="@dimen/price_horizontal_padding"
+            android:textColor="@color/price_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/price_borders"
+            android:textSize="@dimen/price_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/temp_price"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
