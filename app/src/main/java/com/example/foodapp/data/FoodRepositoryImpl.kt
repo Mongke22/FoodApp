@@ -32,16 +32,15 @@ class FoodRepositoryImpl(application: Application) : FoodRepository {
         }.asLiveData()
     }
 
-    override suspend fun getMenuByCategoryName(categoryName: String): LiveData<List<Food>> {
+    override suspend fun getMenuByCategoryName(categoryName: String): List<Food> {
         for (food in apiService.getFoodListByCategory(categoryName).meals) {
             foodInfoDao.insertFoodInfo(mapper.mapFoodInfoDtoToDbModel(food))
         }
 
-        return foodInfoDao.getFoodInfoList().map { foodList ->
-            foodList.map { foodDb ->
+        return foodInfoDao.getFoodInfoList().map { foodDb ->
                 mapper.mapDbModelToEntity(foodDb)
             }
-        }
+
     }
 
     override suspend fun getDetailInfo(foodId: Int): Food {

@@ -2,6 +2,7 @@
     <dimen name="app_bar_height">180dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="text_margin">16dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
     <dimen name="image_size">135dp</dimen>
     <dimen name="food_padding">16dp</dimen>
     <dimen name="food_item_height">167dp</dimen>
@@ -16,4 +17,11 @@
     <dimen name="category_width">88dp</dimen>
     <dimen name="category_height">32dp</dimen>
     <dimen name="category_radius">6dp</dimen>
+    <dimen name="recycler_padding">8dp</dimen>
+    <dimen name="top_picture_width">300dp</dimen>
+    <dimen name="top_picture_height">112dp</dimen>
+    <dimen name="top_bar_height">96dp</dimen>
+    <dimen name="top_bar_margin">42dp</dimen>
+    <dimen name="top_bar_image_margin_start">14dp</dimen>
+    <dimen name="bottom_nav_height">60dp</dimen>
 </resources>

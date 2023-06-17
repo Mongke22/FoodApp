@@ -8,7 +8,7 @@ interface FoodRepository {
 
     fun getCategories(): LiveData<List<Category>>
 
-    suspend fun getMenuByCategoryName(categoryName: String): LiveData<List<Food>>
+    suspend fun getMenuByCategoryName(categoryName: String): List<Food>
 
     suspend fun getDetailInfo(foodId: Int): Food
 }

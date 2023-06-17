@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/topThing"
         android:layout_width="match_parent"
-        android:layout_height="96dp"
+        android:layout_height="@dimen/top_bar_height"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         >
@@ -15,8 +15,8 @@
             android:id="@+id/currentCity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="42dp"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginTop="@dimen/top_bar_margin"
             android:text="Москва"
             android:textColor="@color/black"
             android:textSize="16dp"
@@ -26,8 +26,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="42dp"
+            android:layout_marginStart="@dimen/top_bar_image_margin_start"
+            android:layout_marginTop="@dimen/top_bar_margin"
             android:src="@drawable/ic_arrow"
             app:layout_constraintStart_toEndOf="@id/currentCity"
             app:layout_constraintTop_toTopOf="parent" />
@@ -35,8 +35,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="42dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="@dimen/top_bar_margin"
+            android:layout_marginEnd="@dimen/default_margin"
             android:src="@drawable/ic_qr"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -56,7 +56,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/bottom_nav_height"
         app:itemIconTint="@drawable/bottom_menu_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

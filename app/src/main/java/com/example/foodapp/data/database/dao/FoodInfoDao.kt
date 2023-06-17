@@ -10,7 +10,7 @@ import com.example.foodapp.data.database.model.FoodDbModel
 @Dao
 interface FoodInfoDao {
     @Query("SELECT * FROM foods")
-    fun getFoodInfoList(): LiveData<List<FoodDbModel>>
+    fun getFoodInfoList(): List<FoodDbModel>
 
     @Query("SELECT * FROM foods WHERE id == :getId LIMIT 1")
     suspend fun getFoodInfo(getId: Int): FoodDbModel
