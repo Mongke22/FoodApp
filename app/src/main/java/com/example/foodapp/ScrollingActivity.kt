@@ -20,7 +20,6 @@ private lateinit var binding: ActivityScrollingBinding
      setContentView(binding.root)
 
         setSupportActionBar(findViewById(R.id.toolbar))
-        binding.toolbarLayout.title = title
 
     }
 override fun onCreateOptionsMenu(menu: Menu): Boolean {

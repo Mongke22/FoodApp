@@ -13,4 +13,7 @@
     <dimen name="price_vertical_padding">8dp</dimen>
     <dimen name="price_horizontal_padding">18dp</dimen>
     <dimen name="price_text_size">13sp</dimen>
+    <dimen name="category_width">88dp</dimen>
+    <dimen name="category_height">32dp</dimen>
+    <dimen name="category_radius">6dp</dimen>
 </resources>

@@ -93,4 +93,7 @@
     <string name="temp_food_name">Ветчина и грибы</string>
     <string name="temp_food_description">Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус</string>
     <string name="temp_price">от 315 р</string>
+    <string name="menu_item_menu">Меню</string>
+    <string name="menu_item_profile">Профиль</string>
+    <string name="menu_item_basket">Корзина</string>
 </resources>
